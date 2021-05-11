@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 import Header from '../../header/header';
 import ThemeButton from '../../themeButton/themeButton';
-import { lightTheme, darkTheme, GlobalStyles } from "../../../theme/themeConfig";
+import { lightTheme, darkTheme, GlobalStyles } from "../../../theme/ThemeConfig";
 import Footer from '../../footer/footer';
 
 
