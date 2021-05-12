@@ -60,6 +60,7 @@ const H1 = styled.h1`
   text-align: center;
   font-size: 1.8rem;
   color: ${props => props.theme.mainBlue};
+  padding: auto 10px;
 `;
 
 const H2 = styled.h2`
