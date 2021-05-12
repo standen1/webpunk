@@ -71,16 +71,16 @@ const Meta = () => {
 			<link rel="preconnect" href="https://fonts.gstatic.com" />
 	        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	        <meta name="viewport" content="width=device-width, initial-scale=1" />
-			<title>Webpunk | {pageInfo.title}</title>
+			<title>Webpunk</title>
 			<meta name="description" content={pageInfo.desc} />
 			<meta property="og:type" content="website" />
-			<meta name="og:title" property="og:title" content={'Webpunk | ' + pageInfo.title} />
+			<meta name="og:title" property="og:title" content={`Webpunk | ${pageInfo.title}`} />
 			<meta name="og:description" property="og:description" content={pageInfo.desc} />
 			<meta property="og:site_name" content="WebPunk" />
 			<meta property="og:image" content={mainURL + "webpunk.jpg"} />
 			<meta property="og:url" content={`${mainURL + pageInfo.canonical}`} />  
 			<meta name="twitter:card" content="summary" /> 
-			<meta name="twitter:title" content={'Webpunk | ' + pageInfo.title} />
+			<meta name="twitter:title" content={`Webpunk | ${pageInfo.title}`} />
 			<meta name="twitter:description" content={pageInfo.desc} />
 			<meta name="twitter:image" content={mainURL + "webpunk.jpg"} />
 			{
