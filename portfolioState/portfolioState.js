@@ -36,7 +36,7 @@ export const apptech = {
 
 export const burgerBuilder = {
 	title: "Burger Builder",
-	imageLink: "/images/burgerBuilder.jpg",
+	imageLink: "/images/burgerbuilder.jpg",
 	altImage: "Burger Builder Project",
 	link: "https://react-burger-app-19011.web.app/",
 	shortLink: "https://react-burger-app-19011.web.app/",
