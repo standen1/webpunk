@@ -1,6 +1,7 @@
 import axios from 'axios';
 import parse from 'html-react-parser';
 import styled, { ThemeProvider } from 'styled-components';
+import Image from 'next/image';
 
 import { getFeaturedImage } from '../../lib/utils';
 import { POSTS_API_URL } from '../../lib/constants';
@@ -56,7 +57,8 @@ const Section = styled.section`
 
 	img {
 		display: block;
-		max-width: 600px;
+		width: 600px;
+		max-width: 100%;
 		height: auto;
 		margin: 10px auto;
 	}
