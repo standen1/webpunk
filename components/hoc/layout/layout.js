@@ -43,21 +43,7 @@ const layout = (props) => {
 		  			<ThemeButton click={darkmode.toggle} dark={darkmode.value} />
 		  			{menu}
 		  		</Header>
-		 		<Div as={motion.div} 
-					key={router.route} 
-					initial="pageInitial" 
-					animate="pageAnimate" 
-					variants={
-						{
-						  pageInitial: {
-						    opacity: 0
-						  },
-						  pageAnimate: {
-						    opacity: 1
-					      }
-						}
-					}
-					className="content-wrap"
+		 		<Div 
 					>
 					{props.children}
 				</Div>
