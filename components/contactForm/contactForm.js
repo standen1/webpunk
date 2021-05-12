@@ -118,7 +118,7 @@ const Div = styled.div`
   p {
     font-size: 1.3rem;
     font-weight: 500;
-    max-width: 500px;
+    max-width: 450px;
     margin: auto;
     padding: 0 15px 35px;
   }
@@ -126,7 +126,7 @@ const Div = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 310px;
     justify-content: center;
     margin: auto;
     padding-bottom: 50px;
@@ -138,7 +138,7 @@ const Div = styled.div`
   }
 
   form input {
-    width: 350px;
+    width: 310px;
     height: 35px;
     font-size: 1.2em;
     font-family: inherit;
@@ -146,7 +146,7 @@ const Div = styled.div`
   }
 
   form textarea {
-    width: 350px;
+    width: 310px;
     height: 200px;
     font-size: 1.2em;
     font-family: inherit;
