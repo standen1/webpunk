@@ -70,6 +70,8 @@ const Div = styled.div`
 
 	img {
 		object-fit: contain;
+		
+		width: 100%;
 	}
 
 	h4 {

@@ -1,15 +1,15 @@
 import Link from 'next/link';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import styled, { ThemeProvider } from 'styled-components';
 
 export default function PrivacyPolicy() {
   return (
     <>
-      <MetaInfo 
+      {/*<MetaInfo 
         title="WebPunk | Privacy Policy"
         desc="Information on personal data that might be collected as well as contact information."
-        canonical="privacy-policy" />
+        canonical="privacy-policy" />*/}
       <main>
         <H1>Privacy Policy</H1>
         <Div>

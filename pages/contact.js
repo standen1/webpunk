@@ -1,16 +1,16 @@
 import styled, { ThemeProvider } from 'styled-components';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import DownArrow from '../components/downArrow/downArrow';
 import ContactForm from '../components/contactForm/contactForm';
 
 export default function Contact() {
   return (
     <>
-      <MetaInfo 
+      {/*<MetaInfo 
         title="WebPunk | Contact"
         desc="For web development or any other inquiries, please fill out the form."
-        canonical="contact" />
+        canonical="contact" />*/}
       <main>
         <H1>Contact</H1>
         <section id="contact-form">

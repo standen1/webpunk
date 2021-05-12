@@ -1,4 +1,4 @@
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import styled, { ThemeProvider } from 'styled-components';
 
 import Posts from '../components/blog/posts';
@@ -6,10 +6,10 @@ import Posts from '../components/blog/posts';
 export default function Blog() {
   return (
     <>
-      <MetaInfo 
+      {/*<MetaInfo 
         title="WebPunk | Blog"
         desc="Web development blog where I share my experiences for each project that I work on."
-        canonical="blog" />
+        canonical="blog" />*/}
       <main>
         <H1>Blog</H1>
         <Posts isHome={false} />

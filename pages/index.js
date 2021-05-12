@@ -1,6 +1,6 @@
 import styled, { ThemeProvider } from 'styled-components';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import DownArrow from '../components/downArrow/downArrow';
 import Skills from '../components/skills/skills';
 import Posts from '../components/blog/posts';
@@ -10,10 +10,10 @@ export default function Home() {
 
   return (
     <>
-      <MetaInfo 
+      {/*<MetaInfo 
         title="WebPunk | Home"
         desc="A portfolio and blog for website design and development by Sean Standen."
-        canonical="" />
+        canonical="" />*/}
       <main>
 
         <H1>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled, { ThemeProvider } from 'styled-components';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import PortfolioComponent from '../components/portfolio/portfolio';
 import DownArrow from '../components/downArrow/downArrow';
 
@@ -18,10 +18,10 @@ import {
 export default function Portfolio() {
   return (
     <>
-      <MetaInfo 
+      {/*<MetaInfo 
         title="WebPunk | Portfolio"
         desc="My web development portfolio.  These are all my past projects."
-        canonical="portfolio" />
+        canonical="portfolio" />*/}
       <main>
         <H1>Portfolio</H1>
 
