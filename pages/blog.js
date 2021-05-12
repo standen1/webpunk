@@ -9,7 +9,7 @@ export default function Blog() {
       <MetaInfo 
         title="WebPunk | Blog"
         desc="Web development blog where I share my experiences for each project that I work on."
-        canonical="https://webpunk.tech/blog" />
+        canonical="blog" />
       <main>
         <H1>Blog</H1>
         <Posts isHome={false} />

@@ -21,7 +21,7 @@ export default function Portfolio() {
       <MetaInfo 
         title="WebPunk | Portfolio"
         desc="My web development portfolio.  These are all my past projects."
-        canonical="https://webpunk.tech/portfolio" />
+        canonical="portfolio" />
       <main>
         <H1>Portfolio</H1>
 

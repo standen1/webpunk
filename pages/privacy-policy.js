@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <MetaInfo 
         title="WebPunk | Privacy Policy"
         desc="Information on personal data that might be collected as well as contact information."
-        canonical="https://webpunk.tech/privacy-policy" />
+        canonical="privacy-policy" />
       <main>
         <H1>Privacy Policy</H1>
         <Div>

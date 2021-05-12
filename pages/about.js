@@ -11,7 +11,7 @@ export default function About() {
       <MetaInfo 
         title="WebPunk | About"
         desc="My name is Sean Standen.  I created this website to act as a portfolio and blog for my web development journey."
-        canonical="https://webpunk.tech/about" />
+        canonical="about" />
 
       <main>
         <H1>

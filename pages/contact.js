@@ -10,7 +10,7 @@ export default function Contact() {
       <MetaInfo 
         title="WebPunk | Contact"
         desc="For web development or any other inquiries, please fill out the form."
-        canonical="https://webpunk.tech/contact" />
+        canonical="contact" />
       <main>
         <H1>Contact</H1>
         <section id="contact-form">

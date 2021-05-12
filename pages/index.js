@@ -13,7 +13,7 @@ export default function Home() {
       <MetaInfo 
         title="WebPunk | Home"
         desc="A portfolio and blog for website design and development by Sean Standen."
-        canonical="https://webpunk.tech" />
+        canonical="" />
       <main>
 
         <H1>
