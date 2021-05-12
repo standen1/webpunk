@@ -74,7 +74,7 @@ const Meta = () => {
 			<title>Webpunk | {pageInfo.title}</title>
 			<meta name="description" content={pageInfo.desc} />
 			<meta property="og:type" content="website" />
-			<meta name="og:title" property="og:title" content="WebPunk"} />
+			<meta name="og:title" property="og:title" content="WebPunk" />
 			<meta name="og:description" property="og:description" content={pageInfo.desc} />
 			<meta property="og:site_name" content="WebPunk" />
 			<meta property="og:image" content={mainURL + "webpunk.jpg"} />
