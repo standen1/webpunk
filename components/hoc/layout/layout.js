@@ -38,17 +38,31 @@ const layout = (props) => {
 			<ThemeProvider theme={theme}>
 	  		<GlobalStyles />
 		  	{isMounted &&
-		  		<body>
+		  		<>
 		  		<Header>
 		  			<ThemeButton click={darkmode.toggle} dark={darkmode.value} />
 		  			{menu}
 		  		</Header>
-		 		<Div 
+		 		<Div as={motion.div} 
+					key={router.route} 
+					initial="pageInitial" 
+					animate="pageAnimate" 
+					variants={
+						{
+						  pageInitial: {
+						    opacity: 0
+						  },
+						  pageAnimate: {
+						    opacity: 1
+					      }
+						}
+					}
+					className="content-wrap"
 					>
 					{props.children}
 				</Div>
 				<Footer />
-				</body>}
+				</>}
 				
 			
 			</ThemeProvider>
