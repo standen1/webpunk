@@ -120,7 +120,8 @@ const Div = styled.div`
     font-weight: 500;
     max-width: 450px;
     margin: auto;
-    padding: 0 5px 35px;
+    padding: 0 10px 35px;
+    text-align: center;
   }
 
   form {
@@ -129,7 +130,7 @@ const Div = styled.div`
     width: 310px;
     justify-content: center;
     margin: auto;
-    padding-bottom: 50px;
+    padding: 0 0 50px;
   }
 
   form label {
