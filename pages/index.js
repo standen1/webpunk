@@ -68,6 +68,8 @@ const H2 = styled.h2`
   font-size: 1.5rem;
   color: ${props => props.theme.mainBlue};
   margin-top: 75px;
+  margin-bottom: 5px;
+  padding-bottom: 0;
 `;
 
 const Article = styled.article`

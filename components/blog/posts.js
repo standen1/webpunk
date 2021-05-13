@@ -68,7 +68,7 @@ const Section = styled.section`
   max-width: 1000px;
   margin: auto;
   align-items: start;
-  padding: 35px 20px;
+  padding: 5px 20px 35px;
 
   div {
     display: flex;

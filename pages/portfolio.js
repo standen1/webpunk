@@ -66,6 +66,7 @@ const H2 = styled.h2`
   font-size: 1.5rem;
   color: ${props => props.theme.mainBlue};
   margin: 75px auto 0;
+  padding-bottom: 0;
 `;
 
 const Section = styled.section`
@@ -74,15 +75,15 @@ const Section = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
   align-items: start;
-  padding: 35px 20px;
+  padding: 0 20px 25px;
 
   div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
-    padding: 20px 0;
+    padding: 10px 0;
   }
 `;

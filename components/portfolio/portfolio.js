@@ -38,6 +38,7 @@ const Div = styled.div`
 	justify-content: center;
 	box-sizing: border-box;
 	padding: 0 10px;
+	margin: 0;
 
 	.websiteImage {
 		object-fit: contain;
