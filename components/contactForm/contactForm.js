@@ -139,7 +139,7 @@ const Div = styled.div`
   }
 
   form input {
-    width: 310px;
+    width: 300px;
     height: 35px;
     font-size: 1.2em;
     font-family: inherit;
@@ -147,7 +147,7 @@ const Div = styled.div`
   }
 
   form textarea {
-    width: 310px;
+    width: 300px;
     height: 200px;
     font-size: 1.2em;
     font-family: inherit;
