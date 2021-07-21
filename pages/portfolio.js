@@ -33,9 +33,9 @@ export default function Portfolio() {
           <div>
             <PortfolioComponent webInfo={discoDeathBots} />
           </div>
-          <div>
+          {/*<div>
             <PortfolioComponent webInfo={apptech} />
-          </div>
+          </div>*/}
         </Section>
 
         <DownArrow link="#learningProjects" />
