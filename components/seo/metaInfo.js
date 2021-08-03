@@ -13,12 +13,12 @@ const Meta = (props) => {
 			<meta name="og:title" property="og:title" content={props.title} />
 			<meta name="og:description" property="og:description" content={props.desc} />
 			<meta property="og:site_name" content="Pressure Sensitive" />
-			<meta property="og:image" content={mainURL + "protest.jpg"} />
+			<meta property="og:image" content={mainURL + "/images/webpunk/webpunk.jpg"} />
 			<meta property="og:url" content={`${mainURL + props.canonical}`} />  
 			<meta name="twitter:card" content="summary" /> 
 			<meta name="twitter:title" content={props.title} />
 			<meta name="twitter:description" content={props.desc} />
-			<meta name="twitter:image" content={mainURL + "protest.jpg"} />
+			<meta name="twitter:image" content={mainURL + "/images/webpunk/webpunk.jpg"} />
 			{
 			props.canonical &&
 			<link rel="canonical" href={`${mainURL + props.canonical}`} />
