@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 
 const Meta = ({route}) => {
 	const [pageInfo, setPageInfo] = useState({});
@@ -10,7 +10,7 @@ const Meta = ({route}) => {
 	//Because my ThemeProvider and Animations components wrap my page content
 	//so it disregards my SEO completely.  I will have to implement a basic blog one
 	//that works for all posts.
-	useEffect(() => {
+	useLayoutEffect(() => {
 		switch (route.pathname) {
 			case '/blog' : {
 				setPageInfo({
