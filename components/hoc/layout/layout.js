@@ -4,9 +4,8 @@ import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
 import useDarkMode from 'use-dark-mode';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
-import MetaInfo from '../../seo/metaInfo';
 import Header from '../../header/header';
 import ThemeButton from '../../themeButton/themeButton';
 import { lightTheme, darkTheme, GlobalStyles } from "../../../theme/ThemeConfig";
@@ -27,8 +26,22 @@ const layout = (props) => {
 	const router = useRouter();
 	//Create a variable that returns whichever component
 	//is rendered based on the screen size.
-	let smallScreen = useMediaQuery(600);
+	let smallScreen = useMediaQuery(675);
 	let menu = smallScreen ? <SidebarNav light={!darkmode.value} /> : <MenuNav />;
+
+	//Motion states
+	const spaceVariants = {
+		hidden: {
+			opacity: 0
+		},
+		visible: {
+			opacity: 1,
+			transition: {		
+				duration: 2
+			}
+		}
+	}
+
 
 	useEffect(() => {
 	  setIsMounted(true)
@@ -36,7 +49,6 @@ const layout = (props) => {
 
 	return (
 		<>
-			<MetaInfo />
 			<ThemeProvider theme={theme}>
 	  		<GlobalStyles />
 		  	{isMounted &&
@@ -45,24 +57,16 @@ const layout = (props) => {
 		  			<ThemeButton click={darkmode.toggle} dark={darkmode.value} />
 		  			{menu}
 		  		</Header>
-		 		<Div as={motion.div} 
-					key={router.route} 
-					initial="pageInitial" 
-					animate="pageAnimate" 
-					variants={
-						{
-						  pageInitial: {
-						    opacity: 0
-						  },
-						  pageAnimate: {
-						    opacity: 1
-					      }
-						}
-					}
-					className="content-wrap"
-					>
-					{props.children}
-				</Div>
+		  	<Section as={motion.section}
+		  		variants={spaceVariants}
+		  		initial="hidden"
+		  		animate="visible"
+		  		 >
+		  		}
+		  	</Section>
+		  	<AnimatePresence exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)} >
+			 		<Div key={router.route} >{props.children}</Div>
+				</AnimatePresence>
 				<Footer />
 				</>
 			}
@@ -107,11 +111,24 @@ const useMediaQuery = (width) => {
 };
 
 //Styling
+const Section = styled.section`
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+  background: linear-gradient(rgba(29, 26, 33, 0.9), rgba(0, 0, 0, 0.9)), url("./images/space.jpg") no-repeat fixed center;
+  filter: ${props => props.theme.space};
+`
+
 const Div = styled.div`
 	position: relative;
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	padding-top: 100px;
-	padding-bottom: 60px;
+	padding-bottom: 250px;
 `;

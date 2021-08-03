@@ -115,6 +115,10 @@ export default () => {
 
 //Styes
 const Div = styled.div`
+  box-sizing: border-box;
+  overflow: none;
+  max-width: 100%;
+
   p {
     font-size: 1.3rem;
     font-weight: 500;
@@ -127,7 +131,8 @@ const Div = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    width: 310px;
+    
+    max-width: 400px;
     justify-content: center;
     margin: auto;
     padding: 0 0 50px;
@@ -139,19 +144,25 @@ const Div = styled.div`
   }
 
   form input {
-    width: 300px;
+    max-width: 400px;
     height: 35px;
     font-size: 1.2em;
     font-family: inherit;
+    border: none;
     margin: 5px 0 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #666;
   }
 
   form textarea {
-    width: 300px;
+    max-width: 400px;
     height: 200px;
     font-size: 1.2em;
     font-family: inherit;
     margin: 5px 0 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #666;
   }
 
   form button {
@@ -161,8 +172,9 @@ const Div = styled.div`
     font-family: inherit;
     font-size: 1.3em;
     border-radius: 25px;
-    transition: background-color 0.3s linear;
+    transition: all 0.3s linear;
     margin: auto;
+    box-shadow: 1.5px 1.5px 5px #666;
   }
 
   form button:hover {

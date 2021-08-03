@@ -1,15 +1,26 @@
 import styled, { ThemeProvider } from 'styled-components';
 import Link  from 'next/link';
+import { motion } from 'framer-motion';
+
+import * as animation from '../animationState/animationState';
+import PageHeader from '../components/pageHeader/pageHeader';
 
 // pages/404.js
 export default function Custom404() {
   return (
-  	<Div>
-		<H1>ERROR | 404</H1>
-		<p>Sorry, but the page you are accessing
+  	<Main as={motion.main}
+      variants={animation.containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+		<PageHeader title={'Error | 404'} />
+		<motion.p variants={animation.childVariants}>
+      Sorry, but the page you are accessing
 			does not exist.  Perhaps you were looking
-			for one of these pages listed below:</p>
-  		<Nav>
+			for one of these pages listed below:
+    </motion.p>
+  		<motion.nav variants={animation.childVariants}>
   			<Link href="/">
 	        <a>Home</a>
 	      </Link>
@@ -25,66 +36,65 @@ export default function Custom404() {
 	      <Link href="/contact">
 	        <a>Contact</a>
 	      </Link>
-  		</Nav>
-  	</Div>
+        <Link href="/resume">
+          <a>Resume</a>
+        </Link>
+  		</motion.nav>
+  	</Main>
   );
 }
 
 //Styling
-const H1 = styled.h1`
-  text-align: center;
-  font-size: 1.8rem;
-  color: ${props => props.theme.mainBlue};
-`;
 
-const Div = styled.div`
+const Main = styled.main`
 	display: flex;
 	flex-direction: column;
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
 
   p {
     text-align: center;
     font-size: 1.2rem;
+    margin-bottom: 50px;
   }
-`;
 
-const Nav = styled.nav`
-	height: 400px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
+  nav {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 
-	a {
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        padding: 0;
-        margin: 1.5rem 0;
-        font-weight: 400;
-        letter-spacing: 0.5rem;
-        color: #A2A2A2;
-        text-decoration: none;
-        transition: color 0.3s linear;
-        border: none;
-        list-style-type: none;
-        outline: none;
-        text-align: center;
-      }
+  nav a {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1.5rem 0;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    color: #A2A2A2;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    border: none;
+    list-style-type: none;
+    outline: none;
+    text-align: center;
+  }
 
-      a.isActive {
-        color: #65DC98;
-        opacity: 0.7;
-      }
+  nav a.isActive {
+    color: #65DC98;
+    opacity: 0.7;
+  }
 
-      a:hover {
-        color: #00FFFF;
-        cursor: pointer;
-      }
+  nav a:hover {
+    color: #00FFFF;
+    cursor: pointer;
+  }
 
-      a.isActive:hover {
-        color: #65DC98;
-        cursor: not-allowed;
-      }
+  nav a.isActive:hover {
+    color: #65DC98;
+    cursor: not-allowed;
+  }
 `;

@@ -2,10 +2,13 @@ import axios from 'axios';
 import parse from 'html-react-parser';
 import styled, { ThemeProvider } from 'styled-components';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 import { getFeaturedImage } from '../../lib/utils';
 import { POSTS_API_URL } from '../../lib/constants';
 import MetaInfo from '../../components/seo/metaInfo';
+import * as animation from '../../animationState/animationState';
+import PageHeader from '../../components/pageHeader/pageHeader';
 
 export default function Post({ title, featuredImg, content, excerpt, date}) {
 	return (
@@ -14,14 +17,25 @@ export default function Post({ title, featuredImg, content, excerpt, date}) {
 		        title={title}
 		        desc={excerpt}
 		        canonical="/${[id]}" />
-			<main>
+			<motion.main
+				variants={animation.containerVariants}
+				initial="hidden"
+				animate="visible"
+				exit="exit"
+			>
+				<PageHeader title={title} />
 				<Section>
-					<img src={featuredImg} />
-					<h1>{title}</h1>
-					<h5>{new Date(date).toDateString()}</h5>
-					<div>{parse(content)}</div>
+					<motion.img src={featuredImg}
+						variants={animation.childVariants}
+					/>
+					<motion.h5 variants={animation.childVariants}>
+						{new Date(date).toDateString()}
+					</motion.h5>
+					<motion.div variants={animation.childVariants}>
+						{parse(content)}
+					</motion.div>
 				</Section>
-			</main>
+			</motion.main>
 		</>
 	);
 };

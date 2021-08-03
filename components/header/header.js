@@ -20,7 +20,9 @@ const Header = styled.header`
 	width: 100%;
 	height: 55px;
 	z-index: 100;
-	background: ${props => props.theme.background};
+	// background: ${props => props.theme.headerBackground};
+	background: #000;
+	opacity: 0.9;
 	
 
 	h1 {

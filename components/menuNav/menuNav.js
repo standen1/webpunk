@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styled, { ThemeProvider } from 'styled-components';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+
 
 export default function tableOfContents() {
   //Use router to check if link is active
@@ -8,23 +9,30 @@ export default function tableOfContents() {
   const activeLink = (href) => router.pathname === href ? 'menu-item isActive' : 'menu-item';
   return (
     <>
-      <Menu>
-        <Link href="/">
-          <a className={activeLink('/')}>Home</a>
-        </Link>
-        <Link href="/about">
-          <a className={activeLink('/about')} >About</a>
-        </Link>
-        <Link href="/portfolio">
-          <a className={activeLink('/portfolio')}>Portfolio</a>
-        </Link>
-        <Link href="/blog">
-          <a className={activeLink('/blog')}>Blog</a>
-        </Link>
-        <Link href="/contact">
-          <a className={activeLink('/contact')}>Contact</a>
-        </Link>
-      </Menu>
+        <Menu key={router.link}>
+          <Link href="/" scroll={false}>
+            <a className={activeLink('/')}>Home</a>
+          </Link>
+          <Link href="/about" scroll={false}>
+            <a className={activeLink('/about')} >About</a>
+          </Link>
+          <Link href="/portfolio" scroll={false}>
+            <a className={activeLink('/portfolio')}>Portfolio</a>
+          </Link>
+          <Link href="/blog" scroll={false}>
+            <a className={activeLink('/blog')}>Blog</a>
+          </Link>
+          <Link href="/contact" scroll={false}>
+            <a className={activeLink('/contact')}>Contact</a>
+          </Link>
+          <a 
+            className={activeLink('/resume')} 
+            href="https://drive.google.com/file/d/1kY5FDhyEOHVYz5D90xLSpCqawvlPyF78/view?usp=sharing"
+            target="_blank" rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </Menu>
     </>
   );
 };
@@ -37,13 +45,13 @@ const Menu = styled.menu`
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  width: 450px;
+  
   margin-right: 10px;
 
   a {
-      font-size: 1rem;
+      font-size: 0.9rem;
       padding: 0;
-      margin: 0 5px;
+      margin: 0 5px 0 25px;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
