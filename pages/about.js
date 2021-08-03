@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import * as animation from '../animationState/animationState';
 import PageHeader from '../components/pageHeader/pageHeader';
 import Skills from '../components/skills/skills';
@@ -11,10 +11,10 @@ import Skills from '../components/skills/skills';
 export default function About() {
   return (
     <>
-      <MetaInfo 
+{/*      <MetaInfo 
         title="WebPunk | About"
         desc="My name is Sean Standen.  I created this website to act as a portfolio and blog for my web development journey."
-        canonical="about" />
+        canonical="about" />*/}
 
       <Main as={motion.main}
         variants={animation.containerVariants}

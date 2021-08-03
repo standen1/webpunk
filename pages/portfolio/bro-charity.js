@@ -2,17 +2,17 @@ import Image from 'next/image';
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
-import MetaInfo from '../../components/seo/metaInfo';
+//import MetaInfo from '../../components/seo/metaInfo';
 import * as animation from '../../animationState/animationState';
 import PageHeader from '../../components/pageHeader/pageHeader';
 
 const broCharity = () => {
 	return (
 		<>
-	      <MetaInfo 
+{/*	      <MetaInfo 
 	        title="WebPunk | Portfolio"
 	        desc="A project from my web development portfolio."
-	        canonical="portfolio" />
+	        canonical="portfolio" />*/}
 	      <Main as={motion.main}
 	        variants={animation.containerVariants}
 	        initial="hidden"

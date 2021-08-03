@@ -1,7 +1,7 @@
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import * as animation from '../animationState/animationState';
 import PageHeader from '../components/pageHeader/pageHeader';
 import ContactForm from '../components/contactForm/contactForm';
@@ -9,10 +9,10 @@ import ContactForm from '../components/contactForm/contactForm';
 export default function Contact() {
   return (
     <>
-      <MetaInfo 
+{/*      <MetaInfo 
         title="WebPunk | Contact"
         desc="For web development or any other inquiries, please fill out the form."
-        canonical="contact" />
+        canonical="contact" />*/}
       <motion.main
         variants={animation.containerVariants}
         initial="hidden"

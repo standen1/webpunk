@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
-import MetaInfo from '../../components/seo/metaInfo';
+//import MetaInfo from '../../components/seo/metaInfo';
 import * as animation from '../../animationState/animationState';
 import PageHeader from '../../components/pageHeader/pageHeader';
 import PortfolioProjectLink from '../../components/portfolio/portfolioProjectLink';
@@ -11,10 +11,10 @@ import PortfolioProjectLink from '../../components/portfolio/portfolioProjectLin
 export default function Portfolio() {
   return (
     <>
-      <MetaInfo 
+{/*      <MetaInfo 
         title="WebPunk | Portfolio"
         desc="My web development portfolio.  These are all my past projects."
-        canonical="portfolio" />
+        canonical="portfolio" />*/}
       <Main as={motion.main}
         variants={animation.containerVariants}
         initial="hidden"

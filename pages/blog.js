@@ -2,7 +2,7 @@
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import * as animation from '../animationState/animationState';
 import PageHeader from '../components/pageHeader/pageHeader';
 import Posts from '../components/blog/posts';
@@ -11,10 +11,10 @@ export default function Blog() {
   return (
     <>
     <Main>
-      <MetaInfo 
+{/*      <MetaInfo 
         title="WebPunk | Blog"
         desc="Web development blog where I share my experiences for each project that I work on."
-        canonical="blog" />
+        canonical="blog" />*/}
       <motion.section
         variants={animation.containerVariants}
         initial="hidden"

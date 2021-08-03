@@ -2,17 +2,17 @@ import Link from 'next/link';
 import styled, { ThemeProvider } from 'styled-components';
 import { motion } from 'framer-motion';
 
-import MetaInfo from '../components/seo/metaInfo';
+//import MetaInfo from '../components/seo/metaInfo';
 import * as animation from '../animationState/animationState';
 import PageHeader from '../components/pageHeader/pageHeader';
 
 export default function PrivacyPolicy() {
   return (
     <>
-      <MetaInfo 
+{/*      <MetaInfo 
         title="WebPunk | Privacy Policy"
         desc="Information on personal data that might be collected as well as contact information."
-        canonical="privacy-policy" />
+        canonical="privacy-policy" />*/}
       <Main as={motion.main}
         variants={animation.privacyPageVariants}
         initial="hidden"

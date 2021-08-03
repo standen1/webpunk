@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-import MetaInfo from '../components/seo/metaInfo';
+// import MetaInfo from '../components/seo/metaInfo';
 import * as animation from '../animationState/animationState';
 import PageHeader from '../components/pageHeader/pageHeader';
 import PortfolioProjectLink from '../components/portfolio/portfolioProjectLink';
@@ -13,10 +13,10 @@ export default function Home() {
 
   return (
     <>
-      <MetaInfo 
+{/*      <MetaInfo 
         title="WebPunk | Home"
         desc="A portfolio and blog for website design and development by Sean Standen."
-        canonical="" />
+        canonical="" />*/}
       <Main as={motion.main}
         variants={animation.containerVariants}
           initial="hidden"

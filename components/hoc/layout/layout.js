@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import MetaInfo from '../../seo/metaInfo';
 import Header from '../../header/header';
 import ThemeButton from '../../themeButton/themeButton';
 import { lightTheme, darkTheme, GlobalStyles } from "../../../theme/ThemeConfig";
@@ -49,6 +50,7 @@ const layout = (props) => {
 
 	return (
 		<>
+			<MetaInfo />
 			<ThemeProvider theme={theme}>
 	  		<GlobalStyles />
 		  	{isMounted &&
