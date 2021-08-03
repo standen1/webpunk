@@ -1,18 +1,17 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
-const Meta = () => {
+const Meta = ({route}) => {
 	const [pageInfo, setPageInfo] = useState({});
 	const mainURL = "https://webpunk.tech/";
-	const router = useRouter();
 
 	//Switch statement that generates SEO meta for each page.  I have to do this
 	//Because my ThemeProvider and Animations components wrap my page content
 	//so it disregards my SEO completely.  I will have to implement a basic blog one
 	//that works for all posts.
 	useEffect(() => {
-		switch (router.pathname) {
+		switch (route.pathname) {
 			case '/blog' : {
 				setPageInfo({
 					title: 'Blog',
