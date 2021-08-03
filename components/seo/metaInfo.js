@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { withRouter } from 'next/router';
+
 import { useState, useLayoutEffect } from 'react';
 
 const Meta = ({router}) => {

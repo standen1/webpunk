@@ -50,7 +50,7 @@ const layout = (props) => {
 
 	return (
 		<>
-			<MetaInfo route={router.route} />
+			<MetaInfo router={router} />
 			<ThemeProvider theme={theme}>
 	  		<GlobalStyles />
 		  	{isMounted &&
