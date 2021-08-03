@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import { withRouter } from 'next/router';
 import { useState, useLayoutEffect } from 'react';
 
-const Meta = ({route}) => {
+const Meta = ({router}) => {
 	const [pageInfo, setPageInfo] = useState({});
 	const mainURL = "https://webpunk.tech/";
 
@@ -11,7 +11,7 @@ const Meta = ({route}) => {
 	//so it disregards my SEO completely.  I will have to implement a basic blog one
 	//that works for all posts.
 	useLayoutEffect(() => {
-		switch (useRouter.pathname) {
+		switch (router.pathname) {
 			case '/blog' : {
 				setPageInfo({
 					title: 'Blog',
