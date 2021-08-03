@@ -131,6 +131,6 @@ const Div = styled.div`
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	padding-top: 100px;
-	padding-bottom: 250px;
+	padding: 100px 0 250px 0;
+	
 `;
