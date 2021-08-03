@@ -122,6 +122,8 @@ const Section = styled.section`
 	height: 400px;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
   background: linear-gradient(rgba(29, 26, 33, 0.9), rgba(0, 0, 0, 0.9)), url("./images/space.jpg") no-repeat fixed center;
   filter: ${props => props.theme.space};
 `
@@ -132,5 +134,7 @@ const Div = styled.div`
 	width: 100%;
 	justify-content: center;
 	padding: 100px 0 250px 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
 	
 `;
