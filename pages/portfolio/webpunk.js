@@ -142,7 +142,7 @@ const webpunk = () => {
 	        <section className="protoLength">
 	        	<div>
 		        	<h4>Prototype:</h4>
-		        	<a href="https://www.figma.com/proto/5fhdGwUbxVVaVyDJEHiIR0/Webpunk-Updates?page-id=4%3A24&node-id=24%3A1170&viewport=48%2C558%2C0.20000000298023224&scaling=min-zoom&starting-point-node-id=24%3A1170&show-proto-sidebar=1">https://www.figma.com/proto/5fhdGwUbxVVaVyDJEHiIR0/Webpunk-Updates?page-id=4%3A24&node-id=24%3A1170&viewport=48%2C558%2C0.20000000298023224&scaling=min-zoom&starting-point-node-id=24%3A1170&show-proto-sidebar=1</a>
+		        	<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/5fhdGwUbxVVaVyDJEHiIR0/Webpunk-Updates?page-id=4%3A24&node-id=24%3A1170&viewport=48%2C558%2C0.20000000298023224&scaling=min-zoom&starting-point-node-id=24%3A1170&show-proto-sidebar=1">https://www.figma.com/proto/5fhdGwUbxVVaVyDJEHiIR0/Webpunk-Updates?page-id=4%3A24&node-id=24%3A1170&viewport=48%2C558%2C0.20000000298023224&scaling=min-zoom&starting-point-node-id=24%3A1170&show-proto-sidebar=1</a>
 	        	</div>
 	        </section>
 
