@@ -150,8 +150,13 @@ const Div = styled.div`
     font-family: inherit;
     border: none;
     margin: 5px 0 30px;
+    box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #666;
+
+    @media (max-width: 450px) {
+      padding: 10px;
+    }
   }
 
   form textarea {
@@ -161,16 +166,21 @@ const Div = styled.div`
     font-family: inherit;
     margin: 5px 0 30px;
     border: none;
+    box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #666;
+
+    @media (max-width: 450px) {
+      padding: 10px;
+    }
   }
 
   form button {
     background-color: ${props => props.theme.mainBlue};
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 50px;
     font-family: inherit;
-    font-size: 1.3em;
+    font-size: 1.8em;
     border-radius: 25px;
     transition: all 0.3s linear;
     margin: auto;
