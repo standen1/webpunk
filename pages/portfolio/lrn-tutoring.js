@@ -146,7 +146,7 @@ const lrnTutoring = () => {
 
 	        	<div>
 		        	<h4>Low-Fidelity Prototype:</h4>
-		        	<a href="https://www.figma.com/file/ 2HvalkXnqsQL5mZrCtA8dR/Tutor- App-and-Website?node-id=0%3A1">https://www.figma.com/file/ 2HvalkXnqsQL5mZrCtA8dR/Tutor- App-and-Website?node-id=0%3A1</a>
+		        	<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/file/ 2HvalkXnqsQL5mZrCtA8dR/Tutor- App-and-Website?node-id=0%3A1">https://www.figma.com/file/ 2HvalkXnqsQL5mZrCtA8dR/Tutor- App-and-Website?node-id=0%3A1</a>
 	        	</div>
 
 	        	<div>
