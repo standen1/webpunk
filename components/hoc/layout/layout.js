@@ -13,6 +13,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "../../../theme/ThemeConfig"
 import Footer from '../../footer/footer';
 
 
+
 //These 2 components represent the main menus.  They are loaded dynamically
 //based on the screen size.  SidebarNav contains the burger icon menu for
 //mobile devices/smaller screens and TableOfContents is the menu for 
@@ -50,7 +51,7 @@ const layout = (props) => {
 
 	return (
 		<>
-			<MetaInfo router={router} />
+			<MetaInfo />
 			<ThemeProvider theme={theme}>
 	  		<GlobalStyles />
 		  	{isMounted &&
@@ -64,7 +65,7 @@ const layout = (props) => {
 		  		initial="hidden"
 		  		animate="visible"
 		  		 >
-		  		}
+		  		
 		  	</Section>
 		  	<AnimatePresence exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)} >
 			 		<Div key={router.route} >{props.children}</Div>
@@ -124,7 +125,7 @@ const Section = styled.section`
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
-  background: linear-gradient(rgba(29, 26, 33, 0.9), rgba(0, 0, 0, 0.9)), url("./images/space.jpg") no-repeat fixed center;
+  background: linear-gradient(rgba(29, 26, 33, 0.9), rgba(0, 0, 0, 0.9)), url("/space.jpg") no-repeat fixed center;
   filter: ${props => props.theme.space};
 `
 

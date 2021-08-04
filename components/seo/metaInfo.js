@@ -1,10 +1,12 @@
 import Head from 'next/head';
 
 import { useState, useLayoutEffect } from 'react';
+import { useRouter } from 'next/router';
 
-const Meta = ({router}) => {
+const Meta = () => {
 	const [pageInfo, setPageInfo] = useState({});
 	const mainURL = "https://webpunk.tech/";
+	const router = useRouter();
 
 	//Switch statement that generates SEO meta for each page.  I have to do this
 	//Because my ThemeProvider and Animations components wrap my page content
