@@ -17,7 +17,7 @@ export const containerVariants= {
       mass: 0.4,
       damping: 10,
       when: "beforeChildren",
-      staggerChildren: 0.4
+      staggerChildren: 0.2
     }
   },
   exit: {
@@ -61,7 +61,7 @@ export const extraVariants = {
     x: '-100vw',
     transition: { 
       ease: 'easeInOut',
-      delay: 0.5
+      delay: 0.4
     }
   }
 }
