@@ -164,7 +164,7 @@ const discoDeathBots = () => {
 	        	
 	        	<div>
 		        	<h4>Link to Final Site:</h4>
-		        	<a href="https://discodeathbots.com/">discodeathbots.com</a>
+		        	<a target="_blank" rel="noopener noreferrer" href="https://discodeathbots.com/">discodeathbots.com</a>
 	        	</div>
 	        </section>
 

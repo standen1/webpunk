@@ -164,7 +164,7 @@ const pressureSensitive = () => {
 	        	
 	        	<div>
 		        	<h4>Link to Final Site:</h4>
-		        	<a href="https://pressuresensitiveband.com/">pressuresensitiveband.com</a>
+		        	<a target="_blank" rel="noopener noreferrer" href="https://pressuresensitiveband.com/">pressuresensitiveband.com</a>
 	        	</div>
 	        </section>
 

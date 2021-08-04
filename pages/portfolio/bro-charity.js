@@ -187,7 +187,7 @@ const broCharity = () => {
 	        	
 	        	<div>
 		        	<h4>Prototype:</h4>
-		        	<a href="https://xd.adobe.com/view/4ef61001-7603-4bc2-a34e-5f68f5db6ddf-1ba5/">https://xd.adobe.com/view/4ef61001-7603-4bc2-a34e-5f68f5db6ddf-1ba5/</a>
+		        	<a target="_blank" rel="noopener noreferrer" href="https://xd.adobe.com/view/4ef61001-7603-4bc2-a34e-5f68f5db6ddf-1ba5/">https://xd.adobe.com/view/4ef61001-7603-4bc2-a34e-5f68f5db6ddf-1ba5/</a>
 	        	</div>
 
 	        </section>
