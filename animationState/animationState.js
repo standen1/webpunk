@@ -6,7 +6,9 @@
  *      I wanted to re-use the same
  *      objects.
  * *****************************************/
-export const containerVariants= {
+ 
+
+export const containerVariants = {
   hidden: {
     x: '100vw'
   },
@@ -61,7 +63,7 @@ export const extraVariants = {
     x: '-100vw',
     transition: { 
       ease: 'easeInOut',
-      delay: 0.4
+      delay: 0.2
     }
   }
 }
