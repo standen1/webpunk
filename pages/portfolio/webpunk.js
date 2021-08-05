@@ -26,14 +26,14 @@ const webpunk = () => {
 	        	
 	        	<div>
 		        	<h4>Product:</h4>
-		        	<p>A website for my own design and development portfolio as well as contact information for freelance work.</p>
+		        	<p>A website for my own design and development portfolio, as well as contact information for freelance work.</p>
 	        	</div>
 	        	
 	        	<div>
 		        	<h4>Project Duration:</h4>
 		        	<ul>
 		        		<li>January, 2021 to March, 2021(Initial design and development).</li>
-		        		<li>June, 2021 to Auguse, 2021(Updated version).</li>
+		        		<li>June, 2021 to August, 2021(Updated version).</li>
 		        	</ul>
 	        	</div>
 
@@ -78,7 +78,7 @@ const webpunk = () => {
 	        <section>
 	        	<h2>Planning</h2>
 
-		        <p>I started thinking about what I wanted to include in my portfolio.  After having learned UI/UX Design, I wanted to include full case studies for all of my projects in my portfolio from user research all the way through the development and production process.  I also decided to include a blog for tutorials and things I discover along the way.</p>
+		        <p>I started thinking about what I wanted to include in my portfolio.  After having learned UI/UX Design, I wanted to include full case studies for all of my projects in my portfolio, from user research all the way through the development and production process.  I also decided to include a blog for tutorials and things I discover along the way.</p>
 	        	
 	        	<div></div>
 
@@ -93,7 +93,7 @@ const webpunk = () => {
 		        		<li>Article Pages</li>
 		        		<li>Contact</li>
 		        		<li>Resume(Link to PDF Document)</li>
-		        		<li>Privacy Policy(Contact info is stored)</li>
+		        		<li>Privacy Policy</li>
 		        	</ul>
 	        	</div>
 	        </section>
@@ -149,7 +149,7 @@ const webpunk = () => {
 	        <section>
 	        	<h2>Development</h2>
 	        	
-	        	<p>I decided to build the site using Next, my favorite JavaScript framework that is built on top of React.  It is great for SEO and WCAG standards, it is lightning fast, scalable, and even includes backend functionality.  I also wanted to include a blog, so, I built a de-coupled Wordpress instance as a headless CMS and connected my frontend NextJS website to it in order to push blog posts onto my front-end without having to manually build a page every time I write an article.  I also included Framer Motion as an animation library to make my site appear dynamic.  In order to keep up with accessibility standards, I included code that would dynamically disable all animations if a user’s browser settings called for it.  I also included a Light Mode/Dark Mode toggle for user preferences.</p>
+	        	<p>I decided to build the site using Next, my favorite JavaScript framework that is built on top of React.  It is great for SEO and WCAG standards, it is lightning fast, scalable, and even includes backend functionality.  I also wanted to include a blog, so, I built a de-coupled Wordpress instance as a headless CMS and connected my frontend NextJS website to it in order to push blog posts onto my front-end without having to manually build a page every time I write an article.  I also included Framer Motion as an animation library to make my site appear dynamic, as well as a Light Mode/Dark Mode toggle for user preferences.</p>
 
 	        	<div id="homePageMocks">
 		        	<div className="homePageMock">

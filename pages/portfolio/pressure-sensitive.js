@@ -48,7 +48,7 @@ const pressureSensitive = () => {
 
 	        	<div>
 		        	<h4>The Problem:</h4>
-		        	<p>I had built the first version of this site as the first album was being released.  I built it with React and Bootstrap.  Since I was relatively new to React when I had built the original version in November of 2019, I was not aware of SEO and accessibility problems related to React.</p>
+		        	<p>I had built the first version of this site as the first album was being released.  I built it with React and Bootstrap.  Since I was relatively new to React at the time, I was not aware of SEO and accessibility problems related to React.</p>
 	        	</div>
 
 	        	<div>
@@ -138,7 +138,7 @@ const pressureSensitive = () => {
 			        		<li>Store(External BandCamp Page)</li>
 			        		<li>Contact</li>
 			        		<li>Credits(For artwork, band information, etc.)</li>
-			        		<li>Privacy Policy(Contact information is stored)</li>
+			        		<li>Privacy Policy</li>
 			        	</ul>
 		        	</div>
 		        	<div id="extraMarginTop">
@@ -200,7 +200,7 @@ const pressureSensitive = () => {
 	        	
 	        	<ul>
 	        		<li>Protest Photo by Life Matters on Pexels</li>
-	        		<li>Pressure Sensitive Album Cover by James Keenan of Keenan Artsd</li>
+	        		<li>Pressure Sensitive Album Cover by James Keenan of Keenan Arts</li>
 	        	</ul>
 	        </section>
 

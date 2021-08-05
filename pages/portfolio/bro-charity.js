@@ -73,7 +73,7 @@ const broCharity = () => {
 
 	        	<div>
 		        	<h4>Users:</h4>
-		        	<p> I analyzed what type of users would use an application like this regularly.  I discovered that my users would most likely be professionals or students who Are passionate about helping people or the environment and need a simple way To sign up for volunteer work due to their busy schedules.</p>
+		        	<p> I analyzed what type of users would use an application like this regularly.  I discovered that my users would most likely be professionals or students who are passionate about helping people or the environment, and need a simple way to sign up for volunteer work due to their busy schedules.</p>
 	        	</div>
 
 	        	<div>
